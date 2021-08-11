@@ -8,7 +8,88 @@
   </head>
   <body>
     <header>
-      <h1>Device</h1>
+      <h1 class="visually-hidden">Device</h1>
+      <section class="user-menu">
+        <form action="" class="search">
+          <input type="text" placeholder="Поиск по сайту" />
+        </form>
+        <ul class="user-navigation">
+          <li class="login"><a href="#">Войти</a></li>
+          <li class="compare"><a href="#">Сравнить</a></li>
+          <li class="cart"><a href="#">Корзина</a></li>
+        </ul>
+      </section>
+      <nav class="main-navigation">
+        <ul>
+          <li class="main-navigation__link main-navigation__link_decorated">
+            <a href="catalog.html">Каталог товаров</a>
+          </li>
+        </ul>
+        <ul>
+          <li class="main-navigation__link">
+            <a href="delivery.html">Доставка</a>
+          </li>
+          <li class="main-navigation__link">
+            <a href="warranty.html">Гарантия</a>
+          </li>
+          <li class="main-navigation__link">
+            <a href="contacts.html">Контакты</a>
+          </li>
+        </ul>
+      </nav>
     </header>
+    <section class="hero">
+      <img src="" alt="Самая длинная палка для селфи" class="hero__image" />
+      <div class="hero__info">
+        <span class="hero__number">01</span>
+        <h2 class="hero__heading">Делай селфи, как Бен Стиллер!</h2>
+        <p class="hero__text">
+          Самая длинная палка для&nbsp;селфи доступна в&nbsp;ашем магазине.
+          Восемь (восемь, Карл!) метров длиной и&nbsp;весом всего
+          5&nbsp;килограммов.
+        </p>
+        <p class="hero__panel">
+          <a href="catalog-item.html" class="button hero__button">Подробнее</a>
+          <ul class="hero__pagination">
+            <li>Слайд 1</li>
+            <li>Слайд 2</li>
+            <li>Слайд 3</li>
+          </ul>
+        </p>
+        <table class="hero__specs">
+          <tr>
+            <td>8,5 м</td>
+            <td>5 кг</td>
+            <td>Карбон</td>
+          </tr>
+          <tr>
+            <th>Длина палки</th>
+            <th>Вес палки</th>
+            <th>Материал</th>
+          </tr>
+        </table>
+      </div>
+    </section>
+    <section class="categories">
+      <h2 class="visually-hidden">Категории товаров</h2>
+      <ul class="categories__list">
+        <li class="categories__item"><a href="#">Виртуальная реальность</a></li>
+        <li class="categories__item"><a href="#">Моноподы для&nbsp;селфи</a></li>
+        <li class="categories__item"><a href="#">Экшн-камеры</a></li>
+        <li class="categories__item"><a href="#">Фитнес-браслеты</a></li>
+        <li class="categories__item"><a href="#">Умные часы</a></li>
+        <li class="categories__item"><a href="#">Квадрокоптеры</a></li>
+      </ul>
+    </section>
+    <section class="services">
+      <ul class="tab-list">
+        <li class="tabs__item tabs__item_current"><button>Доставка</button></li>
+        <li class="tabs__item"><button>Гарантия</button></li>
+        <li class="tabs__item"><button>Кредит</button></li>
+      </ul>
+      <section class="tab-content">
+        <h2 class="section-heading">Доставка</h2>
+      </section>
+    </section>
   </body>
 </html>
