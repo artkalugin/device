@@ -4,19 +4,19 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Device</title>
+    <title>Магазин умной электроники «Device»</title>
   </head>
   <body>
     <header>
-      <h1 class="visually-hidden">Device</h1>
+      <h1 class="visually-hidden">Магазин умной электроники «Device»</h1>
       <section class="user-menu">
         <form action="" class="search">
-          <input type="text" placeholder="Поиск по сайту" />
+          <input type="text" placeholder="Поиск по сайту" name="search" id="search-field" />
         </form>
         <ul class="user-navigation">
-          <li class="login"><a href="#">Войти</a></li>
-          <li class="compare"><a href="#">Сравнить</a></li>
-          <li class="cart"><a href="#">Корзина</a></li>
+          <li class="user-navigation__link user-navigtion__link_login"><a href="#">Войти</a></li>
+          <li class="user-navigation__link user-navigation__link_compare"><a href="#">Сравнить</a></li>
+          <li class="user-navigation__link user-navigation__link_cart"><a href="#">Корзина</a></li>
         </ul>
       </section>
       <nav class="main-navigation">
@@ -48,7 +48,7 @@
           Восемь (восемь, Карл!) метров длиной и&nbsp;весом всего
           5&nbsp;килограммов.
         </p>
-        <p class="hero__panel">
+        <p class="hero__controls">
           <a href="catalog-item.html" class="button hero__button">Подробнее</a>
           <ul class="hero__pagination">
             <li>Слайд 1</li>
@@ -73,19 +73,32 @@
     <section class="categories">
       <h2 class="visually-hidden">Категории товаров</h2>
       <ul class="categories__list">
-        <li class="categories__item"><a href="#">Виртуальная реальность</a></li>
-        <li class="categories__item"><a href="#">Моноподы для&nbsp;селфи</a></li>
-        <li class="categories__item"><a href="#">Экшн-камеры</a></li>
-        <li class="categories__item"><a href="#">Фитнес-браслеты</a></li>
-        <li class="categories__item"><a href="#">Умные часы</a></li>
-        <li class="categories__item"><a href="#">Квадрокоптеры</a></li>
+        <li>
+          <!-- Картинки вставим через ::before -->
+          <a class="categories__link" href="#">Виртуальная реальность</a>
+        </li>
+        <li>
+          <a class="categories__link" href="#">Моноподы для&nbsp;селфи</a>
+        </li>
+        <li>
+          <a class="categories__link" href="#">Экшн-камеры</a>
+        </li>
+        <li>
+          <a class="categories__link" href="#">Фитнес-браслеты</a>
+        </li>
+        <li>
+          <a class="categories__link" href="#">Умные часы</a>
+        </li>
+        <li>
+          <a class="categories__link" href="#">Квадрокоптеры</a>
+        </li>
       </ul>
     </section>
     <section class="services">
       <ul class="tab-list">
-        <li class="tabs__item tabs__item_current"><button>Доставка</button></li>
-        <li class="tabs__item"><button>Гарантия</button></li>
-        <li class="tabs__item"><button>Кредит</button></li>
+        <li class="tab tab_current"><button>Доставка</button></li>
+        <li class="tab"><button>Гарантия</button></li>
+        <li class="tab"><button>Кредит</button></li>
       </ul>
       <section class="tab-content">
         <h2 class="section-heading">Доставка</h2>
