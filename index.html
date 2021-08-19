@@ -9,31 +9,47 @@
   <body>
     <header>
       <h1 class="visually-hidden">Магазин умной электроники «Device»</h1>
+      <img
+        class="logo header__logo"
+        src="img/logo/logo_device.svg"
+        alt="Логотип DEVICE"
+      />
       <section class="user-menu">
         <form action="" class="search">
-          <input type="text" placeholder="Поиск по сайту" name="search" id="search-field" />
+          <input
+            type="text"
+            placeholder="Поиск по сайту"
+            name="search"
+            id="search-field"
+          />
         </form>
-        <ul class="user-navigation">
-          <li class="user-navigation__link user-navigtion__link_login"><a href="#">Войти</a></li>
-          <li class="user-navigation__link user-navigation__link_compare"><a href="#">Сравнить</a></li>
-          <li class="user-navigation__link user-navigation__link_cart"><a href="#">Корзина</a></li>
+        <ul class="actions header__actions">
+          <li>
+            <a class="actions__link actions__link_login" href="#">Войти</a>
+          </li>
+          <li>
+            <a class="actions__link actions__link_compare" href="#">Сравнить</a>
+          </li>
+          <li>
+            <a class="actions__link actions__link_checkout" href="#">Корзина</a>
+          </li>
         </ul>
       </section>
-      <nav class="main-navigation">
+      <nav class="navigation">
         <ul>
-          <li class="main-navigation__link main-navigation__link_decorated">
+          <li class="navigation__link navigation__link_decorated">
             <a href="catalog.html">Каталог товаров</a>
           </li>
         </ul>
         <ul>
-          <li class="main-navigation__link">
-            <a href="delivery.html">Доставка</a>
+          <li>
+            <a class="navigation__link" href="delivery.html">Доставка</a>
           </li>
-          <li class="main-navigation__link">
-            <a href="warranty.html">Гарантия</a>
+          <li>
+            <a class="navigation__link" href="warranty.html">Гарантия</a>
           </li>
-          <li class="main-navigation__link">
-            <a href="contacts.html">Контакты</a>
+          <li>
+            <a class="navigation__link" href="contacts.html">Контакты</a>
           </li>
         </ul>
       </nav>
@@ -48,14 +64,12 @@
           Восемь (восемь, Карл!) метров длиной и&nbsp;весом всего
           5&nbsp;килограммов.
         </p>
-        <p class="hero__controls">
-          <a href="catalog-item.html" class="button hero__button">Подробнее</a>
+        <div class="hero__controls">
+          <a href="catalog-item.html" class="button button_middle">Подробнее</a>
           <ul class="hero__pagination">
-            <li>Слайд 1</li>
-            <li>Слайд 2</li>
-            <li>Слайд 3</li>
+            <!-- Здесь будет пагинация для Swiper -->
           </ul>
-        </p>
+        </div>
         <table class="hero__specs">
           <tr>
             <td>8,5 м</td>
@@ -96,13 +110,161 @@
     </section>
     <section class="services">
       <ul class="tab-list">
-        <li class="tab tab_current"><button>Доставка</button></li>
-        <li class="tab"><button>Гарантия</button></li>
-        <li class="tab"><button>Кредит</button></li>
+        <li class="tab tab_current" data-index="0">
+          <button class="button button_short">Доставка</button>
+        </li>
+        <li class="tab" data-index="1">
+          <button class="button button_short">Гарантия</button>
+        </li>
+        <li class="tab" data-index="2">
+          <button class="button button_short">Кредит</button>
+        </li>
       </ul>
-      <section class="tab-content">
+      <section class="tab-content tab-content_delivery">
         <h2 class="section-heading">Доставка</h2>
+        <p class="main-text">
+          Мы с удовольствием доставим ваш товар прямо к вашему подъезду
+          совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш
+          этаж.
+        </p>
+      </section>
+      <section class="tab-content tab-content_warranty">
+        <h2 class="section-heading">Гарантия</h2>
+        <p class="main-text">
+          Мы с удовольствием доставим ваш товар прямо к вашему подъезду
+          совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш
+          этаж.
+        </p>
+      </section>
+      <section class="tab-content tab-content_credit">
+        <h2 class="section-heading">Кредит</h2>
+        <p class="main-text">
+          Мы с удовольствием доставим ваш товар прямо к вашему подъезду
+          совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш
+          этаж.
+        </p>
       </section>
     </section>
+    <section class="manufacturers">
+      <h2 class="visually-hidden">Популярные производители</h2>
+      <ul class="manufacturers__list">
+        <li>
+          <a class="manufacturers__link">
+            <img src="img/logo/logo_dji.svg" alt="Логотип DJI" />
+          </a>
+        </li>
+        <li>
+          <a class="manufacturers__link">
+            <img src="img/logo/logo_sp_gadgets.svg" alt="Логотип SP Gadgets" />
+          </a>
+        </li>
+        <li>
+          <a class="manufacturers__link">
+            <img src="img/logo/logo_gopro.svg" alt="Логотип GoPro" />
+          </a>
+        </li>
+        <li>
+          <a class="manufacturers__link">
+            <img src="img/logo/logo_vive.svg" alt="Логотип VIVE" />
+          </a>
+        </li>
+      </ul>
+    </section>
+    <section class="about 2-columns">
+      <h2 class="section-heading">О&nbsp;нас</h2>
+      <p class="main-text">
+        Огромный выбор гаджетов не оставит равнодушным гика, который есть в
+        каждом из нас.
+      </p>
+      <p class="main-text">
+        Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE
+        работает со многими транспортными компаниями:
+      </p>
+      <ul class="delivery-partners">
+        <li class="delivery-partners__item">Деловые Линии</li>
+        <li class="delivery-partners__item">Автотрейдинг</li>
+        <li class="delivery-partners__item">ЖелДорЭкспедиция</li>
+      </ul>
+      <a href="/about/" class="button button_long">Подробнее о&nbsp;нас</a>
+    </section>
+    <section class="contacts 2-columns">
+      <h2 class="section-heading">Контакты</h2>
+      <p class="main-text">
+        Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете
+        проверить работоспособность покупки. Всякое бывает.
+      </p>
+      <ul class="delivery-partners">
+        <li class="delivery-partners__item">Деловые Линии</li>
+        <li class="delivery-partners__item">Автотрейдинг</li>
+        <li class="delivery-partners__item">ЖелДорЭкспедиция</li>
+      </ul>
+      <iframe src="" frameborder="0">
+        <!-- Здесь будет карта -->
+      </iframe>
+      <a href="/feedback/" class="button button_long">Напишите нам</a>
+    </section>
+    <footer>
+      <section class="footer__top">
+        <img
+          class="logo footer__logo"
+          src="img/logo/logo_device.svg"
+          alt="Логотип DEVICE"
+        />
+        <ul class="actions footer__actions">
+          <li>
+            <a class="actions__link actions__link_login" href="#">Войти</a>
+          </li>
+          <li>
+            <a class="actions__link actions__link_compare" href="#">Сравнить</a>
+          </li>
+          <li>
+            <a class="actions__link actions__link_checkout" href="#">Корзина</a>
+          </li>
+        </ul>
+      </section>
+      <section class="footer__middle">
+        <p class="footer__contacts">г. Москва, ул. Строителей, 15</p>
+        <ul class="navigation footer__navigation">
+          <li>
+            <a class="navigation__link" href="delivery.html">Доставка</a>
+          </li>
+          <li>
+            <a class="navigation__link" href="warranty.html">Гарантия</a>
+          </li>
+          <li>
+            <a class="navigation__link" href="contacts.html">Контакты</a>
+          </li>
+        </ul>
+        <p class="footer__contacts">
+          Тел. +7&nbsp;(495)&nbsp;495&hyphen;95&hyphen;95
+        </p>
+      </section>
+      <section class="footer__bottom">
+        <ul class="social">
+          <li>
+            <a class="social__link social__link_fb" href="https://facebook.com"
+              >Фэйсбук</a
+            >
+          </li>
+          <li>
+            <a class="social__link social__link_ig" href="https://instagram.com"
+              >Инстаграм</a
+            >
+          </li>
+          <li>
+            <a class="social__link social__link_tw" href="https://twitter.com"
+              >Твиттер</a
+            >
+          </li>
+        </ul>
+        <a
+          class="credits-link"
+          href="https://htmlacademy.ru"
+          target="_blank"
+          title="Сделано в HTML Academy"
+          >HTML Academy</a
+        >
+      </section>
+    </footer>
   </body>
 </html>
