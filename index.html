@@ -16,38 +16,39 @@
             <input type="text" name="q" id="search-field" placeholder="Поиск по сайту" />
           </label>
         </form>
-        <ul class="actions header__actions">
+        <ul class="user-actions">
           <li>
-            <a class="actions__link actions__link_login" href="#">Войти</a>
+            <a class="user-actions__link user-actions__link_login" href="#">Войти</a>
           </li>
           <li>
-            <a class="actions__link actions__link_compare" href="#">Сравнить</a>
+            <a class="user-actions__link user-actions__link_compare" href="#">Сравнить</a>
           </li>
           <li>
-            <a class="actions__link actions__link_checkout" href="#">Корзина</a>
-          </li>
-        </ul>
-      </section>
-      <nav class="navigation">
-        <ul>
-          <li class="navigation__link navigation__link_decorated">
-            <a href="catalog.html">Каталог товаров</a>
+            <a class="user-actions__link user-actions__link_checkout" href="#">Корзина</a>
           </li>
         </ul>
+      </div>
+      <nav class="navbar">
         <ul>
           <li>
-            <a class="navigation__link" href="delivery.html">Доставка</a>
+            <a class="navbar__link navbar__link_decorated" href="catalog.html">Каталог товаров</a>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <a class="navbar__link" href="delivery.html">Доставка</a>
           </li>
           <li>
-            <a class="navigation__link" href="warranty.html">Гарантия</a>
+            <a class="navbar__link" href="warranty.html">Гарантия</a>
           </li>
           <li>
-            <a class="navigation__link" href="contacts.html">Контакты</a>
+            <a class="navbar__link" href="contacts.html">Контакты</a>
           </li>
         </ul>
       </nav>
     </header>
     <section class="hero">
+      <!-- TODO: Добавить swiper -->
       <img src="" alt="Самая длинная палка для селфи" class="hero__image" />
       <div class="hero__info">
         <span class="hero__number">01</span>
@@ -81,39 +82,38 @@
       <h2 class="visually-hidden">Категории товаров</h2>
       <ul class="categories__list">
         <li>
-          <!-- Картинки вставим через ::before -->
-          <a class="categories__link" href="#">Виртуальная реальность</a>
+          <a class="categories__link categories__link_vr" href="#">Виртуальная реальность</a>
         </li>
         <li>
-          <a class="categories__link" href="#">Моноподы для&nbsp;селфи</a>
+          <a class="categories__link categories__link_selfie-sticks" href="#">Моноподы для&nbsp;селфи</a>
         </li>
         <li>
-          <a class="categories__link" href="#">Экшн-камеры</a>
+          <a class="categories__link categories__link_action-cams" href="#">Экшн-камеры</a>
         </li>
         <li>
-          <a class="categories__link" href="#">Фитнес-браслеты</a>
+          <a class="categories__link categories__link_wristbands" href="#">Фитнес-браслеты</a>
         </li>
         <li>
-          <a class="categories__link" href="#">Умные часы</a>
+          <a class="categories__link categories__link_smart-watches" href="#">Умные часы</a>
         </li>
         <li>
-          <a class="categories__link" href="#">Квадрокоптеры</a>
+          <a class="categories__link categories__link_drones" href="#">Квадрокоптеры</a>
         </li>
       </ul>
     </section>
     <section class="services">
-      <ul class="tab-list">
-        <li class="tab tab_current" data-index="0">
+      <ul class="services__tab-list">
+        <li class="services__tab services__tab_current" data-index="0">
           <button class="button button_short">Доставка</button>
         </li>
-        <li class="tab" data-index="1">
+        <li class="services__tab" data-index="1">
           <button class="button button_short">Гарантия</button>
         </li>
-        <li class="tab" data-index="2">
+        <li class="services__tab" data-index="2">
           <button class="button button_short">Кредит</button>
         </li>
       </ul>
-      <section class="tab-content tab-content_delivery">
+      <section class="services__tab-content services__tab-content_delivery">
         <h2 class="section-heading">Доставка</h2>
         <p class="main-text">
           Мы с удовольствием доставим ваш товар прямо к вашему подъезду
@@ -121,7 +121,7 @@
           этаж.
         </p>
       </section>
-      <section class="tab-content tab-content_warranty">
+      <section class="services__tab-content services__tab-content_warranty">
         <h2 class="section-heading">Гарантия</h2>
         <p class="main-text">
           Мы с удовольствием доставим ваш товар прямо к вашему подъезду
@@ -129,7 +129,7 @@
           этаж.
         </p>
       </section>
-      <section class="tab-content tab-content_credit">
+      <section class="services__tab-content services__tab-content_credit">
         <h2 class="section-heading">Кредит</h2>
         <p class="main-text">
           Мы с удовольствием доставим ваш товар прямо к вашему подъезду
@@ -163,7 +163,7 @@
         </li>
       </ul>
     </section>
-    <section class="about 2-columns">
+    <section class="about section_2-columns">
       <h2 class="section-heading">О&nbsp;нас</h2>
       <p class="main-text">
         Огромный выбор гаджетов не оставит равнодушным гика, который есть в
@@ -180,7 +180,7 @@
       </ul>
       <a href="/about/" class="button button_long">Подробнее о&nbsp;нас</a>
     </section>
-    <section class="contacts 2-columns">
+    <section class="contacts section_2-columns">
       <h2 class="section-heading">Контакты</h2>
       <p class="main-text">
         Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете
@@ -198,54 +198,56 @@
     </section>
     <footer>
       <section class="footer__top">
+        <!-- а так можно? -->
         <img
-          class="logo footer__logo"
+          class="logo"
           src="img/logo/logo_device.svg"
           alt="Логотип DEVICE"
+          fill="yellow"
         />
-        <ul class="actions footer__actions">
+        <ul class="user-actions">
           <li>
-            <a class="actions__link actions__link_login" href="#">Войти</a>
+            <a class="user-actions__link user-actions__link_login user-actions__link_yellow-icon" href="#">Войти</a>
           </li>
           <li>
-            <a class="actions__link actions__link_compare" href="#">Сравнить</a>
+            <a class="user-actions__link user-actions__link_compare user-actions__link_yellow-icon" href="#">Сравнить</a>
           </li>
           <li>
-            <a class="actions__link actions__link_checkout" href="#">Корзина</a>
+            <a class="user-actions__link user-actions__link_checkout user-actions__link_yellow-icon" href="#">Корзина</a>
           </li>
         </ul>
       </section>
       <section class="footer__middle">
-        <p class="footer__contacts">г. Москва, ул. Строителей, 15</p>
-        <ul class="navigation footer__navigation">
+        <span class="footer__contacts">г. Москва, ул. Строителей, 15</span>
+        <ul class="navbar navbar_yellow">
           <li>
-            <a class="navigation__link" href="delivery.html">Доставка</a>
+            <a class="navbar__link" href="delivery.html">Доставка</a>
           </li>
           <li>
-            <a class="navigation__link" href="warranty.html">Гарантия</a>
+            <a class="navbar__link" href="warranty.html">Гарантия</a>
           </li>
           <li>
-            <a class="navigation__link" href="contacts.html">Контакты</a>
+            <a class="navbar__link" href="contacts.html">Контакты</a>
           </li>
         </ul>
-        <p class="footer__contacts">
+        <span class="footer__contacts">
           Тел. +7&nbsp;(495)&nbsp;495&hyphen;95&hyphen;95
-        </p>
+        </span>
       </section>
       <section class="footer__bottom">
-        <ul class="social">
+        <ul class="social-list">
           <li>
-            <a class="social__link social__link_fb" href="https://facebook.com"
+            <a class="social__icon social__icon_fb" href="https://facebook.com"
               >Фэйсбук</a
             >
           </li>
           <li>
-            <a class="social__link social__link_ig" href="https://instagram.com"
+            <a class="social__icon social__icon_ig" href="https://instagram.com"
               >Инстаграм</a
             >
           </li>
           <li>
-            <a class="social__link social__link_tw" href="https://twitter.com"
+            <a class="social__icon social__link_tw" href="https://twitter.com"
               >Твиттер</a
             >
           </li>
