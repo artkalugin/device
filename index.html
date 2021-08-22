@@ -9,16 +9,19 @@
   <body>
     <header>
       <h1 class="visually-hidden">Device</h1>
-      <section class="user-menu">
-        <form action="" class="search">
-          <input type="text" placeholder="Поиск по сайту" />
+      <div class="user-menu">
+        <form action="https://echo.htmlacademy.ru" class="search" method="get">
+          <label class="visually-hidden">
+            Поиск по&nbsp;сайту
+            <input type="text" name="q" id="search-field" placeholder="Поиск по сайту" />
+          </label>
         </form>
         <ul class="user-navigation">
           <li class="login"><a href="#">Войти</a></li>
           <li class="compare"><a href="#">Сравнить</a></li>
           <li class="cart"><a href="#">Корзина</a></li>
         </ul>
-      </section>
+      </div>
       <nav class="main-navigation">
         <ul>
           <li class="main-navigation__link main-navigation__link_decorated">
@@ -82,12 +85,13 @@
       </ul>
     </section>
     <section class="services">
-      <ul class="tab-list">
+      <h2 class="visually-hidden">Услуги</h2>
+      <ul class="tabs">
         <li class="tabs__item tabs__item_current"><button>Доставка</button></li>
         <li class="tabs__item"><button>Гарантия</button></li>
         <li class="tabs__item"><button>Кредит</button></li>
       </ul>
-      <section class="tab-content">
+      <section class="tabs-content">
         <h2 class="section-heading">Доставка</h2>
       </section>
     </section>
