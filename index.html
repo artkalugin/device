@@ -4,17 +4,17 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style.css">
     <title>Магазин умной электроники «Device»</title>
   </head>
   <body>
-    <header>
+    <header class="header container">
       <h1 class="visually-hidden">Device</h1>
-      <div class="user-menu">
+      <img class="logo" src="/img/logo_device.png" alt="Логотип DEVICE" width="164" height="36">
+      <div class="header__user-menu">
         <form action="https://echo.htmlacademy.ru" class="search" method="get">
-          <label class="visually-hidden">
-            Поиск по&nbsp;сайту
-            <input type="text" name="q" id="search-field" placeholder="Поиск по сайту" />
-          </label>
+          <label class="visually-hidden" for="search-field">Поиск по&nbsp;сайту</label>
+          <input class="header__search-input" type="text" name="q" id="search-field" placeholder="Поиск по сайту" />
         </form>
         <ul class="user-actions">
           <li>

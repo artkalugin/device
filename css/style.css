@@ -1,0 +1,43 @@
+@import "reset.css";
+@import "service.css";
+
+body {
+    font-family: "Open Sans Light", sans-serif;
+    max-width: 1440px;
+}
+
+.container {
+    max-width: 1160px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.header {
+    padding: 0 60px;
+    padding-top: 24px;
+    background: linear-gradient(to bottom, white 41px, #f7e296 41px);
+}
+
+.header__user-menu {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 37px;
+}
+
+.header__search-input {
+    width: 164px;
+    border: none;
+    padding: 0;
+    background-color: transparent;
+}
+
+.header__search-input:focus {
+    outline: none;
+    border-bottom: 1px solid black;
+}
+
+.user-actions {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+}
