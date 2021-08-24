@@ -2,7 +2,7 @@
 @import "normalize.css";
 
 @font-face {
-  font-family: "Gilroy-Light";
+  font-family: "Gilroy Light";
   font-style: normal;
   src: local("Gilroy-Light"), url("../fonts/gilroylight.woff2") format("woff2"),
     url("../fonts/gilroylight.woff") format("woff");
@@ -46,7 +46,6 @@ a {
 
 body {
   font-family: "Open Sans Light", sans-serif;
-  max-width: 1440px;
 }
 
 .container {
@@ -81,6 +80,80 @@ body {
 
 .user-actions {
   display: flex;
-  justify-content: space-between;
-  width: 50%;
+  justify-content: flex-end;
+  list-style: none;
+}
+
+.navbar__list {
+  list-style: none;
+}
+
+.navbar__link {
+  font-family: "Gilroy ExtraBold";
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 3.6px;
+  text-transform: uppercase;
+}
+
+.hero__heading {
+  font-family: "Gilroy ExtraBold";
+  font-size: 47px;
+  line-height: 56px;
+}
+
+.main-text {
+  font-size: 15px;
+  line-height: 30px;
+  letter-spacing: 0.01em;
+}
+
+.button {
+  font-family: "Gilroy ExtraBold";
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  border: 0;
+  background: none;
+}
+
+.specs-table__heading {
+  font-family: "Open Sans Light";
+  font-size: 13px;
+  line-height: 20px;
+  text-align: left;
+  letter-spacing: 0.01em;
+}
+
+.specs-table__value {
+  font-family: "Gilroy Light";
+  font-size: 36px;
+  line-height: 48px;
+  letter-spacing: 0.01em;
+}
+
+.categories__list {
+  list-style: none;
+}
+
+.categories__link {
+  font-family: "Gilroy ExtraBold";
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 0.01em;
+}
+
+.services__tab-list {
+  list-style: none;
+}
+
+.section-heading {
+  font-family: "Gilroy ExtraBold";
+  font-size: 47px;
+  letter-spacing: 0.01em;
+}
+
+.manufacturers__list {
+  list-style: none;
 }

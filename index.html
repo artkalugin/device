@@ -4,59 +4,86 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/style.css" />
     <title>Магазин умной электроники «Device»</title>
   </head>
   <body>
-    <header class="header container">
-      <h1 class="visually-hidden">Device</h1>
-      <img class="logo" src="/img/logo_device.png" alt="Логотип DEVICE" width="164" height="36">
-      <div class="header__user-menu">
-        <form action="https://echo.htmlacademy.ru" class="search" method="get">
-          <label class="visually-hidden" for="search-field">Поиск по&nbsp;сайту</label>
-          <input class="header__search-input" type="text" name="q" id="search-field" placeholder="Поиск по сайту" />
-        </form>
-        <ul class="user-actions">
-          <li>
-            <a class="user-actions__link user-actions__link_login" href="#">Войти</a>
-          </li>
-          <li>
-            <a class="user-actions__link user-actions__link_compare" href="#">Сравнить</a>
-          </li>
-          <li>
-            <a class="user-actions__link user-actions__link_checkout" href="#">Корзина</a>
-          </li>
-        </ul>
+    <header class="header">
+      <div class="container">
+        <h1 class="visually-hidden">Device</h1>
+        <img
+          class="logo"
+          src="/img/logo_device.png"
+          alt="Логотип DEVICE"
+          width="164"
+          height="36"
+        />
+        <div class="header__user-menu">
+          <form
+            action="https://echo.htmlacademy.ru"
+            class="search"
+            method="get"
+          >
+            <label class="visually-hidden" for="search-field"
+              >Поиск по&nbsp;сайту</label
+            >
+            <input
+              class="header__search-input"
+              type="text"
+              name="q"
+              id="search-field"
+              placeholder="Поиск по сайту"
+            />
+          </form>
+          <ul class="user-actions">
+            <li>
+              <a class="user-actions__link user-actions__link_login" href="#"
+                >Войти</a
+              >
+            </li>
+            <li>
+              <a class="user-actions__link user-actions__link_compare" href="#"
+                >Сравнить</a
+              >
+            </li>
+            <li>
+              <a class="user-actions__link user-actions__link_checkout" href="#"
+                >Корзина</a
+              >
+            </li>
+          </ul>
+        </div>
+        <nav class="navbar">
+          <a class="navbar__link navbar__link_decorated" href="catalog.html"
+            >Каталог товаров</a
+          >
+          <ul class="navbar__list">
+            <li>
+              <a class="navbar__link" href="delivery.html">Доставка</a>
+            </li>
+            <li>
+              <a class="navbar__link" href="warranty.html">Гарантия</a>
+            </li>
+            <li>
+              <a class="navbar__link" href="contacts.html">Контакты</a>
+            </li>
+          </ul>
+        </nav>
       </div>
-      <nav class="navbar">
-        <ul>
-          <li>
-            <a class="navbar__link navbar__link_decorated" href="catalog.html">Каталог товаров</a>
-          </li>
-        </ul>
-        <ul>
-          <li>
-            <a class="navbar__link" href="delivery.html">Доставка</a>
-          </li>
-          <li>
-            <a class="navbar__link" href="warranty.html">Гарантия</a>
-          </li>
-          <li>
-            <a class="navbar__link" href="contacts.html">Контакты</a>
-          </li>
-        </ul>
-      </nav>
     </header>
     <section class="hero">
       <!-- TODO: Добавить swiper -->
-      <img src="" alt="Самая длинная палка для селфи" class="hero__image" />
+      <img
+        src="img/selfie_stick.png"
+        alt="Самая длинная палка для селфи"
+        class="hero__image"
+      />
       <div class="hero__info">
-        <span class="hero__number">01</span>
         <h2 class="hero__heading">Делай селфи, как Бен Стиллер!</h2>
-        <p class="hero__text">
-          Самая длинная палка для&nbsp;селфи доступна в&nbsp;ашем магазине.
+        <p class="main-text">
+          Самая длинная палка для&nbsp;селфи доступна в&nbsp;нашем магазине.
           Восемь (восемь, Карл!) метров длиной и&nbsp;весом всего
-          5&nbsp;килограммов.
+          5&nbsp;килограмм.
         </p>
         <div class="hero__controls">
           <a href="catalog-item.html" class="button button_middle">Подробнее</a>
@@ -64,16 +91,16 @@
             <!-- Здесь будет пагинация для Swiper -->
           </ul>
         </div>
-        <table class="hero__specs">
+        <table class="specs-table">
           <tr>
-            <td>8,5 м</td>
-            <td>5 кг</td>
-            <td>Карбон</td>
+            <th class="specs-table__heading">Длина палки</th>
+            <th class="specs-table__heading">Вес палки</th>
+            <th class="specs-table__heading">Материал</th>
           </tr>
           <tr>
-            <th>Длина палки</th>
-            <th>Вес палки</th>
-            <th>Материал</th>
+            <td class="specs-table__value">8,5 м</td>
+            <td class="specs-table__value">5 кг</td>
+            <td class="specs-table__value">Карбон</td>
           </tr>
         </table>
       </div>
@@ -82,22 +109,34 @@
       <h2 class="visually-hidden">Категории товаров</h2>
       <ul class="categories__list">
         <li>
-          <a class="categories__link categories__link_vr" href="#">Виртуальная реальность</a>
+          <a class="categories__link categories__link_vr" href="#"
+            >Виртуальная реальность</a
+          >
         </li>
         <li>
-          <a class="categories__link categories__link_selfie-sticks" href="#">Моноподы для&nbsp;селфи</a>
+          <a class="categories__link categories__link_selfie-sticks" href="#"
+            >Моноподы для&nbsp;селфи</a
+          >
         </li>
         <li>
-          <a class="categories__link categories__link_action-cams" href="#">Экшн-камеры</a>
+          <a class="categories__link categories__link_action-cams" href="#"
+            >Экшн-камеры</a
+          >
         </li>
         <li>
-          <a class="categories__link categories__link_wristbands" href="#">Фитнес-браслеты</a>
+          <a class="categories__link categories__link_wristbands" href="#"
+            >Фитнес-браслеты</a
+          >
         </li>
         <li>
-          <a class="categories__link categories__link_smart-watches" href="#">Умные часы</a>
+          <a class="categories__link categories__link_smart-watches" href="#"
+            >Умные часы</a
+          >
         </li>
         <li>
-          <a class="categories__link categories__link_drones" href="#">Квадрокоптеры</a>
+          <a class="categories__link categories__link_drones" href="#"
+            >Квадрокоптеры</a
+          >
         </li>
       </ul>
     </section>
@@ -116,25 +155,25 @@
       <section class="services__tab-content services__tab-content_delivery">
         <h2 class="section-heading">Доставка</h2>
         <p class="main-text">
-          Мы с удовольствием доставим ваш товар прямо к вашему подъезду
-          совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш
-          этаж.
+          Мы с&nbsp;удовольствием доставим ваш товар прямо к&nbsp;вашему
+          подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая
+          его на&nbsp;ваш этаж.
         </p>
       </section>
       <section class="services__tab-content services__tab-content_warranty">
         <h2 class="section-heading">Гарантия</h2>
         <p class="main-text">
-          Мы с удовольствием доставим ваш товар прямо к вашему подъезду
-          совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш
-          этаж.
+          Если из-за&nbsp;возгорания купленного у&nbsp;нас товара у&nbsp;вас
+          сгорит дом&nbsp;&mdash; не переживайте, мы&nbsp;выдадим вам новый.
+          Товар, не&nbsp;дом, конечно&nbsp;же.
         </p>
       </section>
       <section class="services__tab-content services__tab-content_credit">
         <h2 class="section-heading">Кредит</h2>
         <p class="main-text">
-          Мы с удовольствием доставим ваш товар прямо к вашему подъезду
-          совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш
-          этаж.
+          Залезть в&nbsp;долговую яму стало проще! Кредитные консультанты
+          подберут для&nbsp;вас наиболее выгодные условия кредита. Выгодные
+          для&nbsp;нашего банка, разумеется.
         </p>
       </section>
     </section>
@@ -143,22 +182,22 @@
       <ul class="manufacturers__list">
         <li>
           <a class="manufacturers__link">
-            <img src="img/logo/logo_dji.svg" alt="Логотип DJI" />
+            <img src="img/logo_brand_dji.png" alt="Логотип DJI" />
           </a>
         </li>
         <li>
           <a class="manufacturers__link">
-            <img src="img/logo/logo_sp_gadgets.svg" alt="Логотип SP Gadgets" />
+            <img src="img/logo_brand_sp.png" alt="Логотип SP Gadgets" />
           </a>
         </li>
         <li>
           <a class="manufacturers__link">
-            <img src="img/logo/logo_gopro.svg" alt="Логотип GoPro" />
+            <img src="img/logo_brand_gopro.png" alt="Логотип GoPro" />
           </a>
         </li>
         <li>
           <a class="manufacturers__link">
-            <img src="img/logo/logo_vive.svg" alt="Логотип VIVE" />
+            <img src="img/logo_brand_vive.png" alt="Логотип VIVE" />
           </a>
         </li>
       </ul>
@@ -186,11 +225,6 @@
         Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете
         проверить работоспособность покупки. Всякое бывает.
       </p>
-      <ul class="delivery-partners">
-        <li class="delivery-partners__item">Деловые Линии</li>
-        <li class="delivery-partners__item">Автотрейдинг</li>
-        <li class="delivery-partners__item">ЖелДорЭкспедиция</li>
-      </ul>
       <iframe src="" frameborder="0">
         <!-- Здесь будет карта -->
       </iframe>
@@ -207,13 +241,37 @@
         />
         <ul class="user-actions">
           <li>
-            <a class="user-actions__link user-actions__link_login user-actions__link_yellow-icon" href="#">Войти</a>
+            <a
+              class="
+                user-actions__link
+                user-actions__link_login
+                user-actions__link_yellow-icon
+              "
+              href="#"
+              >Войти</a
+            >
           </li>
           <li>
-            <a class="user-actions__link user-actions__link_compare user-actions__link_yellow-icon" href="#">Сравнить</a>
+            <a
+              class="
+                user-actions__link
+                user-actions__link_compare
+                user-actions__link_yellow-icon
+              "
+              href="#"
+              >Сравнить</a
+            >
           </li>
           <li>
-            <a class="user-actions__link user-actions__link_checkout user-actions__link_yellow-icon" href="#">Корзина</a>
+            <a
+              class="
+                user-actions__link
+                user-actions__link_checkout
+                user-actions__link_yellow-icon
+              "
+              href="#"
+              >Корзина</a
+            >
           </li>
         </ul>
       </section>
