@@ -116,6 +116,7 @@ ul {
   text-transform: uppercase;
   border: 0;
   background: none;
+  padding: 0;
 }
 
 .specs-table__heading {
