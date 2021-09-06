@@ -9,7 +9,7 @@
   </head>
   <body>
     <div class="container">
-    <header class="header">
+      <header class="header">
         <h1 class="visually-hidden">Device</h1>
         <img
           class="logo"
@@ -69,13 +69,86 @@
             </li>
           </ul>
         </nav>
+      </header>
 
-    </header>
+      <main>
+        <h1 class="section-heading">Моноподы для селфи</h1>
+        <ul class="breadcrumbs">
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="catalog.html">Каталог товаров</a></li>
+          <li class="breadcrumbs__current">Моноподы для селфи</li>
+        </ul>
+        <section class="filter">
+          <h3 class="controls-heading">Фильтр:</h3>
+          <!-- Здесь будет форма -->
+        </section>
+        <section class="catalog">
+          <h2 class="visually-hidden">Каталог товаров</h2>
+          <div class="sort-menu">
+            <h3 class="controls-heading">Сортировка:</h3>
+            <ul class="sort-menu__list">
+              <li>
+                <a class="sort-menu__item" href="catalog.html?sort_by=price"
+                  >По&nbsp;цене</a
+                >
+              </li>
+              <li>
+                <a class="sort-menu__item" href="catalog.html?sort_by=type"
+                  >По&nbsp;типу</a
+                >
+              </li>
+              <li>
+                <a
+                  class="sort-menu__item"
+                  href="catalog.html?sort_by=popularity"
+                  >По&nbsp;популярности</a
+                >
+              </li>
+            </ul>
+            <ul class="order-switch">
+              <li>
+                <a class="order-switch__up" href="#">По&nbsp;возрастанию</a>
+              </li>
+              <li>
+                <a class="order-switch__down" href="#">По&nbsp;убыванию</a>
+              </li>
+            </ul>
+          </div>
+          <ul class="catalog-list">
+            <li class="catalog-item">
+              <img src="stick_amateur" alt="Любительская селфи-палка">
+              <p class="catalog-item__text">
+                <a class="catalog-item__link" href="catalog-item.html">Любительская селфи-палка</a>
+                <span class="catalog-item__price"></span>
+              </p>
+            </li>
+            <li class="catalog-item">
+              <img src="stick_amateur" alt="Любительская селфи-палка">
+              <p class="catalog-item__text">
+                <a class="catalog-item__link" href="catalog-item.html">Любительская селфи-палка</a>
+                <span class="catalog-item__price"></span>
+              </p>
+            </li>
+            <li class="catalog-item">
+              <img src="stick_amateur" alt="Любительская селфи-палка">
+              <p class="catalog-item__text">
+                <a class="catalog-item__link" href="catalog-item.html">Любительская селфи-палка</a>
+                <span class="catalog-item__price"></span>
+              </p>
+            </li>
+            <li class="catalog-item">
+              <img src="stick_amateur" alt="Любительская селфи-палка">
+              <p class="catalog-item__text">
+                <a class="catalog-item__link" href="catalog-item.html">Любительская селфи-палка</a>
+                <span class="catalog-item__price"></span>
+              </p>
+            </li>
+          </ul>
+        </section>
+      </main>
 
-
-    <footer class="footer">
+      <footer class="footer">
         <section class="footer__top">
-          <!-- а так можно? -->
           <img
             class="logo"
             src="img/logo_device_yellow.png"
@@ -141,12 +214,16 @@
         <section class="footer__bottom">
           <ul class="social-list">
             <li>
-              <a class="social__icon social__icon_fb" href="https://facebook.com"
+              <a
+                class="social__icon social__icon_fb"
+                href="https://facebook.com"
                 >Фэйсбук</a
               >
             </li>
             <li>
-              <a class="social__icon social__icon_ig" href="https://instagram.com"
+              <a
+                class="social__icon social__icon_ig"
+                href="https://instagram.com"
                 >Инстаграм</a
               >
             </li>
@@ -166,3 +243,5 @@
         </section>
       </footer>
     </div>
+  </body>
+</html>
