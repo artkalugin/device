@@ -97,7 +97,7 @@ ul {
   text-transform: uppercase;
 }
 
-.catalog-list__item {
+.catalog__item {
   font-family: "Open Sans Light";
   font-size: 15px;
   line-height: 36px;
