@@ -97,6 +97,12 @@ ul {
   text-transform: uppercase;
 }
 
+.catalog-list__item {
+  font-family: "Open Sans Light";
+  font-size: 15px;
+  line-height: 36px;
+}
+
 .hero__heading {
   font-family: "Gilroy ExtraBold";
   font-size: 47px;
