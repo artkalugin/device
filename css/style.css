@@ -41,6 +41,7 @@
 
 body {
   font-family: "Open Sans Light", sans-serif;
+  letter-spacing: 0.01em;
 }
 
 a {
@@ -105,7 +106,6 @@ ul {
 .main-text {
   font-size: 15px;
   line-height: 30px;
-  letter-spacing: 0.01em;
 }
 
 .button {
@@ -124,14 +124,12 @@ ul {
   font-size: 13px;
   line-height: 20px;
   text-align: left;
-  letter-spacing: 0.01em;
 }
 
 .specs-table__value {
   font-family: "Gilroy Light";
   font-size: 36px;
   line-height: 48px;
-  letter-spacing: 0.01em;
 }
 
 .categories__list {
@@ -142,7 +140,6 @@ ul {
   font-family: "Gilroy ExtraBold";
   font-size: 18px;
   line-height: 24px;
-  letter-spacing: 0.01em;
 }
 
 .services__tab-list {
@@ -152,7 +149,6 @@ ul {
 .section-heading {
   font-family: "Gilroy ExtraBold";
   font-size: 47px;
-  letter-spacing: 0.01em;
 }
 
 .manufacturers__list {
@@ -161,6 +157,66 @@ ul {
 
 .map {
   display: block;
+}
+
+.breadcrumbs__item {
+  font-size: 14px;
+  line-height: 24px;
+  opacity: 30%;
+}
+
+.controls-heading {
+  font-family: "Gilroy ExtraBold";
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+.filter__legend {
+  font-family: "Gilroy ExtraBold";
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.filter__label {
+  font-family: "Open Sans Light";
+  font-size: 14px;
+}
+
+.sort-menu__item {
+  font-family: "Open Sans Light";
+  font-size: 14px;
+  line-height: 18px;
+  opacity: 30%;
+}
+
+.sort-menu__item_current {
+  opacity: 100%;
+}
+
+.catalog-item__link {
+  font-family: "Gilroy ExtraBold";
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.catalog-item__price {
+  font-family: "Gilroy Light";
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.pagination__item {
+  font-family: "Gilroy ExtraBold";
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.2em;
+  opacity: 30%;
+}
+
+.pagination__item_current {
+  opacity: 100%;
 }
 
 .footer {
