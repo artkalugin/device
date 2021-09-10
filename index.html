@@ -35,44 +35,34 @@
             />
           </form>
           <ul class="user-actions">
-            <li>
-              <a class="user-actions__link user-actions__link_login" href="#"
-                >Войти</a
-              >
+            <li class="user-actions__item user-actions__item_login">
+              <a href="#">Войти</a>
             </li>
-            <li>
-              <a href="#" class="user-actions__username visually-hidden">Валентин Петухов</a>
+            <li class="user-actions__item user-actions__item_username" hidden>
+              <a href="#">Валентин Петухов</a>
             </li>
-            <li>
-              <a class="user-actions__link user-actions__link_logout visually-hidden" href="#"
-                >Выйти</a
-              >
+            <li class="user-actions__item user-actions__item_logout" hidden>
+              <a href="#">Выйти</a>
             </li>
-            <li>
-              <a class="user-actions__link user-actions__link_compare" href="#"
-                >Сравнить</a
-              >
+            <li class="user-actions__item user-actions__item_compare">
+              <a href="#">Сравнить</a>
             </li>
-            <li>
-              <a class="user-actions__link user-actions__link_checkout" href="#"
-                >Корзина</a
-              >
+            <lic lass="user-actions__item user-actions__item_cart">
+              <a href="#">Корзина</a>
             </li>
           </ul>
         </div>
         <nav class="navbar">
-          <a class="navbar__link navbar__link_decorated" href="catalog.html"
-            >Каталог товаров</a
-          >
+          <button class="button navbar__button">Каталог товаров</button>
           <ul class="navbar__list">
-            <li>
-              <a class="navbar__link" href="delivery.html">Доставка</a>
+            <li class="navbar__item navbar__item_delivery">
+              <a href="delivery.html">Доставка</a>
             </li>
-            <li>
-              <a class="navbar__link" href="warranty.html">Гарантия</a>
+            <li class="navbar__item">
+              <a href="warranty.html">Гарантия</a>
             </li>
-            <li>
-              <a class="navbar__link" href="contacts.html">Контакты</a>
+            <li class="navbar__item navbar__item_contacts">
+              <a href="contacts.html">Контакты</a>
             </li>
           </ul>
         </nav>
@@ -91,16 +81,21 @@
           <!-- SLIDE 1 -->
           <section class="hero__slide">
             <!-- TODO: Добавить swiper -->
+            <div class="hero__image-container">
             <img
               src="img/hero_stick.png"
               alt="Самая длинная палка для селфи"
               class="hero__image"
+              width="384"
+              height="486"
             />
+          </div>
             <div class="hero__info">
-              <h2 class="hero__heading">Делай селфи, как Бен Стиллер!</h2>
+              <h2 class="hero__heading">Делай селфи,<br>как Бен Стиллер!</h2>
               <p class="main-text">
                 Самая длинная палка для&nbsp;селфи доступна в&nbsp;нашем
-                магазине. Восемь (восемь, Карл!) метров длиной и&nbsp;весом
+                магазине.<br>
+                Восемь (восемь, Карл!) метров длиной и&nbsp;весом
                 всего 5&nbsp;килограмм.
               </p>
               <div class="hero__controls">
@@ -133,9 +128,9 @@
               class="hero__image"
             />
             <div class="hero__info">
-              <h2 class="hero__heading">Худеем правильно!</h2>
+              <h2 class="hero__heading">Худеем<br>правильно!</h2>
               <p class="main-text">
-                Мотивирующие фитнес-браслеты помогут найти в&nbsp;себе силы
+                Мотивирующие фитнес-браслеты помогут найти в&nbsp;себе силы<br>
                 не&nbsp;пропускать занятия и&nbsp;соблюдать диету.
               </p>
               <div class="hero__controls">
@@ -194,39 +189,23 @@
         <section class="categories">
           <h2 class="visually-hidden">Категории товаров</h2>
           <ul class="categories__list">
-            <li>
-              <a class="categories__link categories__link_vr" href="#"
-                >Виртуальная реальность</a
-              >
+            <li class="categories__item">
+              <a class="categories__link categories__link_vr" href="#">Виртуальная реальность</a>
             </li>
-            <li>
-              <a
-                class="categories__link categories__link_selfie-sticks"
-                href="#"
-                >Моноподы для&nbsp;селфи</a
-              >
+            <li class="categories__item">
+              <a class="categories__link categories__link_sticks" href="#">Моноподы для&nbsp;селфи</a>
             </li>
-            <li>
-              <a class="categories__link categories__link_action-cams" href="#"
-                >Экшн-камеры</a
-              >
+            <li class="categories__item">
+              <a class="categories__link categories__link_action-cams" href="#">Экшн-камеры</a>
             </li>
-            <li>
-              <a class="categories__link categories__link_wristbands" href="#"
-                >Фитнес-браслеты</a
-              >
+            <li class="categories__item">
+              <a class="categories__link categories__link_wristbands" href="#">Фитнес-браслеты</a>
             </li>
-            <li>
-              <a
-                class="categories__link categories__link_smart-watches"
-                href="#"
-                >Умные часы</a
-              >
+            <li class="categories__item">
+              <a class="categories__link categories__link_watches" href="#">Умные часы</a>
             </li>
-            <li>
-              <a class="categories__link categories__link_drones" href="#"
-                >Квадрокоптеры</a
-              >
+            <li class="categories__item">
+              <a class="categories__link categories__link_drones" href="#">Квадрокоптеры</a>
             </li>
           </ul>
         </section>
@@ -325,6 +304,7 @@
           </section>
         </div>
       </main>
+    </div>
       <footer class="footer">
         <section class="footer__top">
           <!-- а так можно? -->
@@ -421,7 +401,6 @@
           >
         </section>
       </footer>
-    </div>
 
     <!-- MODALS -->
     <section class="modal modal_feedback">
