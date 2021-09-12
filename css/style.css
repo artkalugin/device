@@ -316,6 +316,8 @@ ul {
 .footer {
   margin-top: 90px;
   padding-top: 64px;
+  color: white;
+  background-color: #464646;
 }
 
 .footer__section {
@@ -393,9 +395,4 @@ ul {
 
 .pagination__item_current {
   opacity: 100%;
-}
-
-.footer {
-  color: white;
-  background-color: #464646;
 }
