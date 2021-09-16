@@ -253,8 +253,34 @@ ul {
   position: absolute;
   width: 160px;
   height: 160px;
-  background: #f7e296;
+  background-color: #f7e296;
+  background-position: center;
+  background-repeat: no-repeat;
   top: 0;
+}
+
+.categories__link_vr::before {
+  background-image: url('../img/popular-1.svg');
+}
+
+.categories__link_sticks::before {
+  background-image: url('../img/popular-2.svg');
+}
+
+.categories__link_action-cams::before {
+  background-image: url('../img/popular-3.svg');
+}
+
+.categories__link_wristbands::before {
+  background-image: url('../img/popular-4.svg');
+}
+
+.categories__link_watches::before {
+  background-image: url('../img/popular-5.svg');
+}
+
+.categories__link_drones::before {
+  background-image: url('../img/popular-6.svg');
 }
 
 .services {
