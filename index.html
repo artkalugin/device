@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
     <title>Магазин умной электроники «Device»</title>
   </head>
   <body>
@@ -78,8 +80,10 @@
       <main>
         <h1 class="visually-hidden">Device</h1>
         <section class="hero">
+          <div class="swiper">
+            <div class="swiper-wrapper">
           <!-- SLIDE 1 -->
-          <section class="hero__slide">
+          <section class="hero__slide swiper-slide">
             <!-- TODO: Добавить swiper -->
             <div class="hero__image-container">
             <img
@@ -98,12 +102,10 @@
                 Восемь (восемь, Карл!) метров длиной и&nbsp;весом
                 всего 5&nbsp;килограмм.
               </p>
-              <div class="hero__controls">
-                <a href="catalog-item.html" class="button button_medium"
-                  >Подробнее</a
-                >
-                <!-- Здесь будет пагинация для Swiper -->
-              </div>
+              <p class="hero__controls">
+                <a href="catalog-item.html" class="button button_medium">Подробнее</a>
+                <span class="swiper-pagination"></span>
+              </p>
               <table class="specs-table">
                 <tr>
                   <th class="specs-table__heading">Длина палки</th>
@@ -120,7 +122,7 @@
           </section>
           <!-- SLIDE 1 -->
           <!-- SLIDE 2 -->
-          <section class="hero__slide">
+          <section class="hero__slide swiper-slide">
             <!-- TODO: Добавить swiper -->
             <img
               src="img/hero_band.png"
@@ -133,12 +135,10 @@
                 Мотивирующие фитнес-браслеты помогут найти в&nbsp;себе силы<br>
                 не&nbsp;пропускать занятия и&nbsp;соблюдать диету.
               </p>
-              <div class="hero__controls">
-                <a href="catalog-item.html" class="button button_medium"
-                  >Подробнее</a
-                >
-                <!-- Здесь будет пагинация для Swiper -->
-              </div>
+              <p class="hero__controls">
+                <a href="catalog-item.html" class="button button_medium">Подробнее</a>
+                <span class="swiper-pagination"></span>
+              </p>
               <table class="specs-table">
                 <tr>
                   <th class="specs-table__heading">Без&nbsp;подзарядки</th>
@@ -151,8 +151,7 @@
           </section>
           <!-- SLIDE 2 -->
           <!-- SLIDE 3 -->
-          <section class="hero__slide">
-            <!-- TODO: Добавить swiper -->
+          <section class="hero__slide swiper-slide">
             <img
               src="img/hero_drone.png"
               alt="Самая длинная палка для селфи"
@@ -166,12 +165,10 @@
                 Этот обычный, на&nbsp;первый взгляд, квадрокоптер оснащен мощным
                 лазером, замаскированным под&nbsp;стандартную камеру.
               </p>
-              <div class="hero__controls">
-                <a href="catalog-item.html" class="button button_medium"
-                  >Подробнее</a
-                >
-                <!-- Здесь будет пагинация для Swiper -->
-              </div>
+              <p class="hero__controls">
+                <a href="catalog-item.html" class="button button_medium">Подробнее</a>
+                <span class="swiper-pagination"></span>
+              </p>
               <table class="specs-table">
                 <tr>
                   <th class="specs-table__heading">Дальность полета</th>
@@ -183,6 +180,8 @@
                 </tr>
               </table>
             </div>
+          </div>
+          </div>
           </section>
           <!-- SLIDE 3 -->
         </section>
@@ -443,5 +442,6 @@
     <section class="modal modal_map">
       <img src="map.png" alt="г. Москва, ул. Строителей, 15" />
     </section>
+    <script src="js/swiper.js"></script>
   </body>
 </html>

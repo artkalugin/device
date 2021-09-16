@@ -165,9 +165,14 @@ ul {
   background: linear-gradient(to bottom, #f7e296, #f7e296 115px, #ffffff 115px);
 }
 
+.swiper .swiper-pagination {
+  position: static;
+}
+
 .hero__image-container {
-  width: 50%;
-  margin-right: 20px;
+  box-sizing: border-box;
+  flex-basis: 580px;
+  padding-right: 20px;
   display: flex;
   justify-content: center;
 }
@@ -177,7 +182,8 @@ ul {
 }
 
 .hero__info {
-  width: 50%;
+  box-sizing: border-box;
+  flex-basis: 580px;
   padding-left: 20px;
 }
 
