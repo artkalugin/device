@@ -92,10 +92,6 @@ ul {
   background-color: transparent;
 }
 
-.header__search-input:focus {
-
-}
-
 .user-actions {
   font-size: 15px;
   display: flex;
