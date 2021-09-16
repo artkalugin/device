@@ -63,8 +63,9 @@ ul {
 }
 
 .container {
-  max-width: 1160px;
+  max-width: 1210px;
   width: 100%;
+  padding: 0 25px;
   margin: 0 auto;
 }
 
@@ -193,10 +194,28 @@ ul {
   line-height: 56px;
   margin: 0;
   margin-top: 83px;
+  margin-bottom: 30px;
 }
 
-.button-short {
+.hero__content {
+  max-width: 480px;
+}
+
+.specs-table {
+  padding: 0;
+}
+
+.specs-table__heading {
+  width: 140px;
+  padding: 0;
+}
+
+.specs-table__heading:first-child {
   width: 160px;
+}
+
+.specs-table__value {
+  padding: 0;
 }
 
 .main-text {
@@ -211,8 +230,24 @@ ul {
   letter-spacing: 0.2em;
   text-transform: uppercase;
   border: 0;
-  background: none;
   padding: 0;
+  background: linear-gradient(to bottom, transparent 16px, #f0c52e 16px, #f0c52e 23px, transparent 23px);
+  height: 40px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button_short {
+  width: 160px;
+}
+
+.button_medium {
+  width: 220px;
+}
+
+.button_long {
+  width: 260px;
 }
 
 .specs-table__heading {
