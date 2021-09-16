@@ -1,4 +1,3 @@
-@import "service.css";
 @import "normalize.css";
 
 @font-face {
@@ -76,7 +75,7 @@ ul {
   background: linear-gradient(to bottom, #ffffff 41px, #f7e296 41px, #f7e296 300px);
 }
 
-.logo {
+.header__logo {
   margin-bottom: 35px;
 }
 
@@ -316,6 +315,7 @@ ul {
 .footer {
   margin-top: 90px;
   padding-top: 64px;
+  padding-bottom: 66px;
   color: white;
   background-color: #464646;
 }
@@ -324,6 +324,15 @@ ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.footer__top {
+  align-items: flex-start;
+  margin-bottom: 40px;
+}
+
+.footer__middle {
+  padding-bottom: 70px;
 }
 
 .footer__bottom::before {
