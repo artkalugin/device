@@ -38,7 +38,9 @@
   margin: -1px;
 }
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: inherit;
 }
 
@@ -73,7 +75,12 @@ ul {
   padding: 0 60px;
   padding-top: 24px;
   padding-bottom: 55px;
-  background: linear-gradient(to bottom, #ffffff 41px, #f7e296 41px, #f7e296 300px);
+  background: linear-gradient(
+    to bottom,
+    #ffffff 41px,
+    #f7e296 41px,
+    #f7e296 300px
+  );
 }
 
 .header__logo {
@@ -224,18 +231,33 @@ ul {
 }
 
 .button {
+  border: 0;
+  padding: 0;
   font-family: "Gilroy ExtraBold";
   font-size: 18px;
   line-height: 24px;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-  border: 0;
-  padding: 0;
-  background: linear-gradient(to bottom, transparent 16px, #f0c52e 16px, #f0c52e 23px, transparent 23px);
+  background: linear-gradient(
+    to bottom,
+    transparent 16px,
+    #f0c52e 16px,
+    #f0c52e 23px,
+    transparent 23px
+  );
   height: 40px;
   display: inline-flex;
   justify-content: center;
   align-items: center;
+}
+
+.navbar__button {
+  background: none;
+  height: auto;
+}
+
+.button__text {
+  margin-right: -0.2em;
 }
 
 .button_short {
@@ -295,27 +317,27 @@ ul {
 }
 
 .categories__link_vr::before {
-  background-image: url('../img/popular-1.svg');
+  background-image: url("../img/popular-1.svg");
 }
 
 .categories__link_sticks::before {
-  background-image: url('../img/popular-2.svg');
+  background-image: url("../img/popular-2.svg");
 }
 
 .categories__link_action-cams::before {
-  background-image: url('../img/popular-3.svg');
+  background-image: url("../img/popular-3.svg");
 }
 
 .categories__link_wristbands::before {
-  background-image: url('../img/popular-4.svg');
+  background-image: url("../img/popular-4.svg");
 }
 
 .categories__link_watches::before {
-  background-image: url('../img/popular-5.svg');
+  background-image: url("../img/popular-5.svg");
 }
 
 .categories__link_drones::before {
-  background-image: url('../img/popular-6.svg');
+  background-image: url("../img/popular-6.svg");
 }
 
 .services {
@@ -323,7 +345,7 @@ ul {
   padding-bottom: 70px;
   margin-bottom: 94px;
   background: url("/img/delivery.svg") no-repeat right center,
-              linear-gradient(to bottom, #ffffff 100px, #e5e5e5 100px);
+    linear-gradient(to bottom, #ffffff 100px, #e5e5e5 100px);
 }
 
 .services__tab-list {
