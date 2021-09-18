@@ -84,24 +84,76 @@ ul {
 }
 
 .header__logo {
-  margin-bottom: 35px;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.header__logo:hover {
+  opacity: 60%;
+}
+
+.header__logo:active {
+  opacity: 30%;
 }
 
 .header__user-menu {
   display: flex;
   justify-content: space-between;
+  align-items: baseline;
   margin-bottom: 50px;
+  font-size: 15px;
+  line-height: 30px;
 }
 
-.header__search-input {
-  width: 164px;
+.search {
+  display: flex;
+}
+
+.search__input {
   border: none;
   padding: 0;
+  position: relative;
+  padding-left: 40px;
+  width: 355px;
+  height: 50px;
+  display: flex;
+  align-items: center;
   background-color: transparent;
+  background-image: url("../img/search.svg");
+  background-repeat: no-repeat;
+  background-position: 3px center;
+}
+
+.search__input:focus {
+  background-color: transparent;
+  outline: none;
+  box-shadow: inset 0 -2px 0 0 #000000;
+}
+
+.search__button {
+  display: none;
+  background: none;
+  padding: 0;
+  cursor: pointer;
+  border: 2px solid black;
+  padding: 0 20px;
+}
+
+.search__input:focus + .search__button {
+  display: block;
+}
+
+.search__button:hover {
+  color: #ffffff;
+  background-color: #000000;
+}
+
+.search__button:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #000000;
 }
 
 .user-actions {
-  font-size: 15px;
   display: flex;
   justify-content: flex-end;
   align-items: baseline;
@@ -117,6 +169,14 @@ ul {
 .user-actions__item {
   position: relative;
   padding-left: 25px;
+}
+
+.user-actions__item:hover {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.user-actions__item:active {
+  color: rgba(0, 0, 0, 0.3);
 }
 
 .user-actions__item::before {
@@ -254,6 +314,7 @@ ul {
 .navbar__button {
   background: none;
   height: auto;
+  cursor: pointer;
 }
 
 .button__text {
