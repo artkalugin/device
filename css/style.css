@@ -74,7 +74,7 @@ ul {
 .header {
   padding: 0 60px;
   padding-top: 24px;
-  padding-bottom: 55px;
+  padding-bottom: 65px;
   background: linear-gradient(
     to bottom,
     #ffffff 41px,
@@ -186,11 +186,15 @@ ul {
   transition: all 0.1s;
 }
 
-.user-actions__link:hover {
+.user-actions__link:hover,
+.navbar__link:hover,
+.button:hover .button__text {
   opacity: 60%;
 }
 
-.user-actions__link:active {
+.user-actions__link:active,
+.navbar__link:active,
+.button:active .button__text {
   opacity: 30%;
 }
 
@@ -260,7 +264,7 @@ ul {
 
 .hero__slide {
   display: flex;
-  background: linear-gradient(to bottom, #f7e296, #f7e296 115px, #ffffff 115px);
+  background: linear-gradient(to bottom, #f7e296, #f7e296 100px, #ffffff 100px);
 }
 
 .swiper .swiper-pagination {
@@ -290,7 +294,7 @@ ul {
   font-size: 47px;
   line-height: 56px;
   margin: 0;
-  margin-top: 83px;
+  margin-top: 68px;
   margin-bottom: 30px;
 }
 
@@ -339,12 +343,12 @@ ul {
   display: inline-flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
 
 .navbar__button {
   background: none;
   height: auto;
-  cursor: pointer;
   padding-right: 30px;
   position: relative;
 }
