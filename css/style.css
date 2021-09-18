@@ -51,6 +51,7 @@ html {
 body {
   font-family: "Open Sans Light", sans-serif;
   letter-spacing: 0.01em;
+  /* counter-reset: slide; */
 }
 
 a {
@@ -241,6 +242,17 @@ ul {
   justify-content: flex-start;
   width: 50%;
   padding-left: 20px;
+  position: relative;
+}
+
+.navbar__list::after {
+  content: "";
+  width: 100px;
+  height: 7px;
+  background: #ffffff;
+  position: absolute;
+  bottom: -90px;
+  z-index: 2;
 }
 
 .navbar__item_delivery {
@@ -266,6 +278,18 @@ ul {
   display: flex;
   background: linear-gradient(to bottom, #f7e296, #f7e296 100px, #ffffff 100px);
 }
+
+/* .hero__slide::before {
+  counter-increment: slide;
+  content: "0" counter(slide);
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-family: "Gilroy ExtraBold";
+  font-size: 179.2px;
+  line-height: 179.2px;
+  color: #ffffff;
+} */
 
 .swiper .swiper-pagination {
   position: static;
