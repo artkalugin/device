@@ -189,7 +189,7 @@ ul {
   content: "";
   position: absolute;
   left: 0;
-  top: 5px;
+  bottom: 0;
   height: 100%;
   vertical-align: baseline;
   width: 13px;
@@ -200,14 +200,17 @@ ul {
 .user-actions__link_login::before,
 .user-actions__link_username::before {
   background-image: url("/img/user.svg");
+  bottom: 1px;
 }
 
 .user-actions__link_compare::before {
   background-image: url("/img/compare.svg");
+  bottom: -1px;
 }
 
 .user-actions__link_cart::before {
   background-image: url("/img/cart.svg");
+  bottom: 1px;
 }
 
 .navbar {
