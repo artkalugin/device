@@ -345,6 +345,18 @@ ul {
   background: none;
   height: auto;
   cursor: pointer;
+  padding-right: 30px;
+  position: relative;
+}
+
+.navbar__button::after {
+  content: "";
+  background-image: url("../img/plus.svg");
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  right: 0;
+  opacity: 30%;
 }
 
 .button__text {
