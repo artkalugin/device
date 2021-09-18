@@ -125,6 +125,15 @@ ul {
   transition: all 0.3s;
 }
 
+.search__input::placeholder {
+  color: inherit;
+  opacity: 30%;
+}
+
+.search__input:hover::placeholder {
+  opacity: 60%;
+}
+
 .search__input:focus {
   width: 355px;
   background-color: transparent;
