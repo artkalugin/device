@@ -51,7 +51,6 @@ html {
 body {
   font-family: "Open Sans Light", sans-serif;
   letter-spacing: 0.01em;
-  /* counter-reset: slide; */
 }
 
 a {
@@ -279,17 +278,17 @@ ul {
   background: linear-gradient(to bottom, #f7e296, #f7e296 100px, #ffffff 100px);
 }
 
-/* .hero__slide::before {
-  counter-increment: slide;
-  content: "0" counter(slide);
+.hero__slide::before {
+  content: attr(data-slide-number);
   position: absolute;
   top: 0;
-  right: 0;
+  right: 60px;
+  margin-right: -8px;
   font-family: "Gilroy ExtraBold";
   font-size: 179.2px;
-  line-height: 179.2px;
+  line-height: 133px;
   color: #ffffff;
-} */
+}
 
 .swiper .swiper-pagination {
   position: static;
@@ -311,6 +310,7 @@ ul {
   box-sizing: border-box;
   flex-basis: 580px;
   padding-left: 20px;
+  z-index: 1;
 }
 
 .hero__heading {
