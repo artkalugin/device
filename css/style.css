@@ -370,21 +370,30 @@ ul {
   cursor: pointer;
 }
 
-.navbar__button {
-  background: none;
-  height: auto;
+.navbar__link_catalog {
   padding-right: 30px;
   position: relative;
 }
 
-.navbar__button::after {
+.navbar__link_catalog::after {
   content: "";
   background-image: url("../img/plus.svg");
   width: 16px;
   height: 16px;
   position: absolute;
   right: 0;
+  top: 3px;
   opacity: 30%;
+}
+
+/* ппц костыль, но лучше пока не придумал */
+
+.navbar__link_catalog:hover::after {
+  opacity: 50%;
+}
+
+.navbar__link_catalog:active::after {
+  opacity: 100%;
 }
 
 .button__text {
