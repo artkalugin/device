@@ -244,16 +244,6 @@ ul {
   position: relative;
 }
 
-.navbar__list::after {
-  content: "";
-  width: 100px;
-  height: 7px;
-  background: #ffffff;
-  position: absolute;
-  bottom: -90px;
-  z-index: 2;
-}
-
 .navbar__item_delivery {
   margin-right: 35px;
 }
@@ -307,10 +297,21 @@ ul {
 }
 
 .hero__info {
+  position: relative;
   box-sizing: border-box;
   flex-basis: 580px;
   padding-left: 20px;
   z-index: 1;
+}
+
+.hero__info::before {
+  content: "";
+  width: 100px;
+  height: 7px;
+  background: #ffffff;
+  position: absolute;
+  top: 30px;
+  left: 20px;
 }
 
 .hero__heading {
