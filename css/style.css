@@ -30,6 +30,10 @@
     url("../fonts/opensanslight.woff") format("woff");
 }
 
+:root {
+  --swiper-pagination-bullet-horizontal-gap: 10px;
+}
+
 .visually-hidden {
   position: absolute;
   clip: rect(0 0 0 0);
@@ -282,6 +286,20 @@ ul {
 
 .swiper .swiper-pagination {
   position: static;
+  width: auto !important;
+  margin-right: 10px;
+}
+
+.swiper .swiper-pagination-bullet {
+  background: none;
+  background-image: url("../img/radio-off.svg");
+  width: 12px;
+  height: 12px;
+  margin: 0 10px;
+}
+
+.swiper .swiper-pagination-bullet-active {
+  background-image: url("../img/radio-on.svg");
 }
 
 .hero__image-container {
@@ -325,6 +343,19 @@ ul {
 
 .hero__content {
   max-width: 480px;
+}
+
+.hero__text {
+  margin: 0;
+  margin-bottom: 45px;
+}
+
+.hero__controls {
+  margin: 0;
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .specs-table {
@@ -402,15 +433,15 @@ ul {
 }
 
 .button_short {
-  width: 160px;
+  min-width: 160px;
 }
 
 .button_medium {
-  width: 220px;
+  min-width: 220px;
 }
 
 .button_long {
-  width: 260px;
+  min-width: 260px;
 }
 
 .specs-table__heading {
@@ -446,38 +477,57 @@ ul {
   padding-top: 200px;
 }
 
-.categories__link::before {
+.categories__link::before,
+.categories__link::after {
   content: "";
   position: absolute;
   width: 160px;
   height: 160px;
-  background-color: #f7e296;
   background-position: center;
   background-repeat: no-repeat;
   top: 0;
+  left: 0;
+  transition: all 0.1s;
 }
 
-.categories__link_vr::before {
+.categories__link::before {
+  background-color: #f7e296;
+}
+
+.categories__link:hover::before {
+  background-color: #f0c52e;
+}
+
+.categories__link:active .categories__name,
+.categories__link:active::after {
+  opacity: 30%;
+}
+
+.categories__name {
+  transition: all 0.1s;
+}
+
+.categories__link_vr::after {
   background-image: url("../img/popular-1.svg");
 }
 
-.categories__link_sticks::before {
+.categories__link_sticks::after {
   background-image: url("../img/popular-2.svg");
 }
 
-.categories__link_action-cams::before {
+.categories__link_action-cams::after {
   background-image: url("../img/popular-3.svg");
 }
 
-.categories__link_wristbands::before {
+.categories__link_wristbands::after {
   background-image: url("../img/popular-4.svg");
 }
 
-.categories__link_watches::before {
+.categories__link_watches::after {
   background-image: url("../img/popular-5.svg");
 }
 
-.categories__link_drones::before {
+.categories__link_drones::after {
   background-image: url("../img/popular-6.svg");
 }
 
