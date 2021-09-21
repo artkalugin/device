@@ -216,17 +216,17 @@ ul {
 
 .user-actions__link_login::before,
 .user-actions__link_username::before {
-  background-image: url("/img/user.svg");
+  background-image: url("../img/user.svg");
   bottom: 1px;
 }
 
 .user-actions__link_compare::before {
-  background-image: url("/img/compare.svg");
+  background-image: url("../img/compare.svg");
   bottom: -1px;
 }
 
 .user-actions__link_cart::before {
-  background-image: url("/img/cart.svg");
+  background-image: url("../img/cart.svg");
   bottom: 1px;
 }
 
